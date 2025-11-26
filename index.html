@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uditha Jaya Sri – Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            color: #ffffff;
+            scroll-behavior: smooth;
+            background: #0d1b2a;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(6px);
+        }
+
+        .navbar-brand {
+            color: #00c8ff !important;
+            font-weight: 700;
+        }
+
+        .nav-link {
+            color: white !important;
+            margin-left: 10px;
+        }
+
+        .nav-link:hover {
+            color: #00c8ff !important;
+        }
+
+        /* Full-screen sections */
+        section {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+            scroll-snap-align: start;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Home/hero with particle animation */
+        #home {
+            position: relative;
+            background: #0d1b2a;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .typing-effect {
+            font-size: 1.4rem;
+            color: #00c8ff;
+            margin: 10px 0;
+            height: 40px;
+        }
+
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #00c8ff;
+            box-shadow: 0 0 20px rgba(0, 200, 255, 0.5);
+            margin-top: 30px;
+        }
+
+        /* Section titles */
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #00c8ff;
+        }
+
+        /* About */
+        .about-text {
+            font-size: 1.1rem;
+            max-width: 800px;
+            line-height: 1.8;
+            margin: 0 auto;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill-card {
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px;
+            min-width: 150px;
+            font-weight: 600;
+        }
+
+        /* Experience timeline */
+        .timeline {
+            border-left: 3px solid #00c8ff;
+            padding-left: 25px;
+            margin-left: 10px;
+            text-align: left;
+            max-width: 800px;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+        }
+
+        .timeline-item h5 {
+            color: #00c8ff;
+            margin-bottom: 5px;
+        }
+
+        /* Projects cards */
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.project-card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project-img-wrapper {
+    position: relative;
+}
+
+.project-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+
+
+
+        /* Contact */
+ .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    font-size: 2rem;
+    color: #00c8ff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #0077b5; /* example hover color for all icons */
+    transform: scale(1.2);
+}
+ 
+ 
+ 
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #061018;
+            color: #b7b7b7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .typing-effect {
+                font-size: 1.2rem;
+            }
+
+            .profile-img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand">Uditha Jaya Sri</a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navMenu">☰</button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1>Hello, I'm <span style="color:#00c8ff;">Uditha</span></h1>
+            <div id="typing" class="typing-effect"></div>
+            <p>IT Technical Officer with experience in IT infrastructure, troubleshooting, AWS, Office 365, system administration, and ASP.NET MVC web application development.</p>
+            <img src="https://raw.githubusercontent.com/UdithaJayaSri/Portfolio/refs/heads/main/Images/profile.jpg.png" alt="Profile Image" class="profile-img">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-text">
+            I am an IT Technical Officer working with the Sri Lanka Bureau of Foreign Employment. I have hands-on
+            experience in IT infrastructure support, server management, application troubleshooting, and cloud
+            services including AWS and Office 365 administration. I enjoy problem-solving and optimizing
+            processes, ensuring smooth IT operations.
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">ASP.NET MVC / .NET Framework</div>
+            <div class="skill-card">SQL Server / Database Management</div>
+            <div class="skill-card">AWS Cloud Services</div>
+            <div class="skill-card">Office 365 Administration</div>
+            <div class="skill-card">System & Network Troubleshooting</div>
+            <div class="skill-card">Hardware & Software Support</div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h5>IT Technical Officer – SLBFE</h5>
+                <p>Responsible for infrastructure support, server management, troubleshooting, and end-user support.</p>
+            </div>
+            <div class="timeline-item">
+                <h5>System & Database Support</h5>
+                <p>Worked on ASP.NET MVC applications, SQL Server databases, and provided continuous system support.</p>
+            </div>
+            <div class="timeline-item">
+                <h5>Cloud & Office 365 Admin</h5>
+                <p>Managed AWS cloud resources and Office 365 services, including user access, email, and security settings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+        <!-- Hardware Inventory System -->
+        <div class="project-card">
+            <div class="project-img-wrapper">
+                <img src="https://raw.githubusercontent.com/UdithaJayaSri/Portfolio/refs/heads/main/Images/1.png" alt="Hardware Inventory Project">
+                <div class="project-overlay">Hardware Inventory System</div>
+            </div>
+        </div>
+
+        <!-- Firebase Notification App -->
+        <div class="project-card">
+            <div class="project-img-wrapper">
+                <img src="https://raw.githubusercontent.com/UdithaJayaSri/Portfolio/refs/heads/main/Images/2.png" alt="Firebase Notification Project">
+                <div class="project-overlay">Firebase Notification App</div>
+            </div>
+        </div>
+
+        <!-- Label Generator Tool -->
+        <div class="project-card">
+            <div class="project-img-wrapper">
+                <img src="https://raw.githubusercontent.com/UdithaJayaSri/Portfolio/refs/heads/main/Images/3.png" alt="Label Generator Project">
+                <div class="project-overlay">Label Generator Tool</div>
+            </div>
+        </div>
+
+        <!-- Meal Attendance System -->
+        <div class="project-card">
+            <div class="project-img-wrapper">
+                <img src="https://raw.githubusercontent.com/UdithaJayaSri/Portfolio/refs/heads/main/Images/4.png" alt="Meal Attendance System">
+                <div class="project-overlay">Meal Attendance Tracking System</div>
+            </div>
+        </div>
+
+        <!-- ASP.NET MVC Specification Management -->
+        <div class="project-card">
+            <div class="project-img-wrapper">
+                <img src="https://raw.githubusercontent.com/UdithaJayaSri/Portfolio/refs/heads/main/Images/6.png" alt="MVC Specification Management">
+                <div class="project-overlay">ASP.NET MVC Specification Management</div>
+            </div>
+        </div>
+
+        <!-- OST Reader Tool -->
+        <div class="project-card">
+            <div class="project-img-wrapper">
+                <img src="https://raw.githubusercontent.com/UdithaJayaSri/Portfolio/refs/heads/main/Images/5.png" alt="OST Reader Tool">
+                <div class="project-overlay">OST File Reader Tool</div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-icons">
+        <a href="mailto:ujs.live@gmail.com" target="_blank" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/uditha" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/UdithaJayaSri" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.facebook.com/share/16TQiRdvRa/" target="_blank" title="Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        © <script>document.write(new Date().getFullYear())</script> Uditha Jaya Sri | All Rights Reserved
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Particles.js Configuration -->
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 80 },
+                "color": { "value": "#00c8ff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5 },
+                "size": { "value": 3 },
+                "line_linked": { "enable": true, "distance": 150, "color": "#00c8ff", "opacity": 0.4, "width": 1 },
+                "move": { "enable": true, "speed": 2 }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "repulse" },
+                    "onclick": { "enable": true, "mode": "push" }
+                },
+                "modes": { "repulse": { "distance": 100 } }
+            },
+            "retina_detect": true
+        });
+    </script>
+
+    <!-- Typing Effect -->
+    <script>
+        const roles = ["Technical Officer", "IT Support Specialist", "AWS & O365 Admin"];
+        let roleIndex = 0, charIndex = 0;
+
+        function typing() {
+            const output = roles[roleIndex].substring(0, charIndex);
+            document.getElementById("typing").textContent = output;
+
+            charIndex++;
+            if (charIndex > roles[roleIndex].length) {
+                charIndex = 0;
+                roleIndex = (roleIndex + 1) % roles.length;
+                setTimeout(typing, 600);
+            } else {
+                setTimeout(typing, 120);
+            }
+        }
+        typing();
+    </script>
+
+</body>
+</html>
