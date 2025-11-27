@@ -245,6 +245,67 @@
             color: #b7b7b7;
         }
 
+
+
+
+
+        /* PROFILE PICTURE FIXED CENTER + ANIMATIONS */
+        .profile-wrapper {
+            position: relative;
+            width: 260px;
+            height: 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .profile-wrapper::before {
+            content: "";
+            position: absolute;
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            border: 3px solid #00c8ff;
+            animation: circleGlow 3s linear infinite;
+            box-shadow: 0 0 25px #00c8ff;
+        }
+
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #00c8ff;
+            box-shadow: 0 0 20px rgba(0, 200, 255, 0.5);
+        }
+
+        /* Bounce Animation */
+        .bounce {
+            animation: bounce 2.5s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        /* Circle Glow Animation */
+        @keyframes circleGlow {
+            0% { transform: rotate(0deg); opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { transform: rotate(360deg); opacity: 1; }
+        }
+
+
+
+
+
+
+
+
+
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero-content h1 {
@@ -253,13 +314,30 @@
 
             .typing-effect {
                 font-size: 1.2rem;
+            }            
+        }
+		
+		
+		
+		  @media (max-width: 768px) {
+            .profile-wrapper {
+                width: 200px;
+                height: 200px;
+            }
+
+            .profile-wrapper::before {
+                width: 200px;
+                height: 200px;
             }
 
             .profile-img {
-                width: 180px;
-                height: 180px;
+                width: 170px;
+                height: 170px;
             }
         }
+		
+		
+		
     </style>
 </head>
 
@@ -291,8 +369,20 @@
             <h1>Hello, I'm <span style="color:#00c8ff;">Uditha</span></h1>
             <div id="typing" class="typing-effect"></div>
             <p>IT Technical Officer with experience in IT infrastructure, troubleshooting, AWS, Office 365, system administration, and ASP.NET MVC web application development.</p>
-            <img src="https://raw.githubusercontent.com/UdithaJayaSri/Portfolio/refs/heads/main/Images/profile.jpg.png" alt="Profile Image" class="profile-img">
-        </div>
+     
+	 <br>
+	 <center>
+	 
+	  <div class="profile-wrapper">
+    <img src="https://raw.githubusercontent.com/UdithaJayaSri/Portfolio/refs/heads/main/Images/profile.jpg.png" 
+         alt="Profile Image" 
+         class="profile-img bounce">
+</div>
+
+	 </center>
+
+	
+   </div>
     </section>
 
     <!-- About Section -->
