@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00c8ff"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+    <radialGradient id="glowA" cx="0.15" cy="0.15" r="0.6"><stop offset="0" stop-color="#00c8ff" stop-opacity="0.25"/><stop offset="1" stop-color="#00c8ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowB" cx="0.9" cy="0.9" r="0.6"><stop offset="0" stop-color="#7c5cff" stop-opacity="0.3"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+    <g id="bars" fill="#0a0f1a"><rect x="0" y="0" width="2" height="18"/><rect x="4" y="0" width="1" height="18"/><rect x="7" y="0" width="3" height="18"/><rect x="12" y="0" width="1" height="18"/><rect x="15" y="0" width="2" height="18"/><rect x="19" y="0" width="3" height="18"/><rect x="24" y="0" width="1" height="18"/><rect x="27" y="0" width="2" height="18"/><rect x="31" y="0" width="1" height="18"/><rect x="34" y="0" width="3" height="18"/></g>
+    <g id="label"><rect width="140" height="80" rx="8" fill="#f4f7fc"/><rect x="10" y="10" width="70" height="8" rx="3" fill="#0a0f1a"/><rect x="10" y="24" width="50" height="5" rx="2" fill="#0a0f1a" fill-opacity="0.45"/><use href="#bars" x="10" y="44"/><g transform="translate(96,40)" fill="#0a0f1a"><rect width="30" height="30" fill="none" stroke="#0a0f1a" stroke-width="2"/><rect x="5" y="5" width="8" height="8"/><rect x="17" y="5" width="8" height="8"/><rect x="5" y="17" width="8" height="8"/><rect x="19" y="19" width="6" height="6"/></g></g>
+  </defs>
+  <rect width="800" height="500" fill="#070b14"/>
+  <rect width="800" height="500" fill="url(#glowA)"/><rect width="800" height="500" fill="url(#glowB)"/>
+  <g transform="translate(50,40)">
+    <rect width="700" height="420" rx="18" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="24" cy="22" r="5" fill="#ff5f57"/><circle cx="42" cy="22" r="5" fill="#febc2e"/><circle cx="60" cy="22" r="5" fill="#28c840"/>
+    <text x="84" y="26" fill="#94a3bb" font-size="12">Label Generator</text>
+    <line x1="0" y1="44" x2="700" y2="44" stroke="#ffffff" stroke-opacity="0.08"/>
+
+    <!-- preview sheet -->
+    <g transform="translate(24,62)">
+      <rect width="430" height="336" rx="16" fill="#101827"/>
+      <text x="18" y="28" fill="#eef2fb" font-size="13" font-weight="600">Preview</text>
+      <use href="#label" x="18" y="46"/><use href="#label" x="18" y="140"/><use href="#label" x="18" y="234" opacity="0.6"/>
+      <use href="#label" x="170" y="46"/><use href="#label" x="170" y="140"/><use href="#label" x="170" y="234" opacity="0.6"/>
+      <g transform="translate(322,46)"><rect width="90" height="80" rx="8" fill="#f4f7fc" opacity="0.5"/></g>
+      <g transform="translate(322,140)"><rect width="90" height="80" rx="8" fill="#f4f7fc" opacity="0.35"/></g>
+    </g>
+
+    <!-- settings -->
+    <g transform="translate(470,62)">
+      <rect width="206" height="336" rx="16" fill="#101827"/>
+      <text x="18" y="30" fill="#eef2fb" font-size="14" font-weight="700">Label settings</text>
+      <g font-size="11" fill="#94a3bb">
+        <text x="18" y="62">Label size</text><rect x="18" y="70" width="170" height="30" rx="9" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/><text x="30" y="90" fill="#eef2fb" font-size="12">50 × 30 mm</text>
+        <text x="18" y="124">Code type</text><rect x="18" y="132" width="80" height="28" rx="14" fill="#00c8ff" fill-opacity="0.16" stroke="#00c8ff"/><text x="58" y="150" fill="#00c8ff" font-weight="600" text-anchor="middle">Barcode</text>
+        <rect x="106" y="132" width="82" height="28" rx="14" fill="#ffffff" fill-opacity="0.06"/><text x="147" y="150" fill="#c5d0e4" text-anchor="middle">QR code</text>
+        <text x="18" y="186">Quantity</text><rect x="18" y="194" width="170" height="30" rx="9" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/><text x="30" y="214" fill="#eef2fb" font-size="12">Batch of labels</text>
+      </g>
+      <rect x="18" y="250" width="170" height="32" rx="16" fill="url(#g)"/><text x="103" y="271" fill="#04121a" font-size="13" font-weight="700" text-anchor="middle">Generate</text>
+      <rect x="18" y="292" width="170" height="32" rx="16" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.15"/><text x="103" y="313" fill="#eef2fb" font-size="13" text-anchor="middle">Print</text>
+    </g>
+  </g>
+</svg>

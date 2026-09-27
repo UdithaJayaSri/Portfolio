@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00c8ff"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+    <radialGradient id="glowA" cx="0.15" cy="0.15" r="0.6"><stop offset="0" stop-color="#00c8ff" stop-opacity="0.25"/><stop offset="1" stop-color="#00c8ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowB" cx="0.9" cy="0.9" r="0.6"><stop offset="0" stop-color="#7c5cff" stop-opacity="0.3"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#070b14"/>
+  <rect width="800" height="500" fill="url(#glowA)"/><rect width="800" height="500" fill="url(#glowB)"/>
+  <g transform="translate(50,40)">
+    <rect width="700" height="420" rx="18" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="24" cy="22" r="5" fill="#ff5f57"/><circle cx="42" cy="22" r="5" fill="#febc2e"/><circle cx="60" cy="22" r="5" fill="#28c840"/>
+    <text x="84" y="26" fill="#94a3bb" font-size="12">IT Fault Ticketing</text>
+    <rect x="556" y="10" width="120" height="24" rx="12" fill="url(#g)"/><text x="616" y="26" fill="#04121a" font-size="11" font-weight="700" text-anchor="middle">+ New ticket</text>
+    <line x1="0" y1="44" x2="700" y2="44" stroke="#ffffff" stroke-opacity="0.08"/>
+
+    <!-- status tiles -->
+    <g font-size="11">
+      <g transform="translate(24,62)"><rect width="150" height="62" rx="14" fill="#101827"/><rect x="14" y="14" width="6" height="34" rx="3" fill="#ff5f57"/><text x="30" y="28" fill="#94a3bb">Open</text><text x="30" y="46" fill="#eef2fb" font-size="15" font-weight="700">New faults</text></g>
+      <g transform="translate(186,62)"><rect width="150" height="62" rx="14" fill="#101827"/><rect x="14" y="14" width="6" height="34" rx="3" fill="#febc2e"/><text x="30" y="28" fill="#94a3bb">In progress</text><text x="30" y="46" fill="#eef2fb" font-size="15" font-weight="700">Assigned</text></g>
+      <g transform="translate(348,62)"><rect width="150" height="62" rx="14" fill="#101827"/><rect x="14" y="14" width="6" height="34" rx="3" fill="#00c8ff"/><text x="30" y="28" fill="#94a3bb">Waiting</text><text x="30" y="46" fill="#eef2fb" font-size="15" font-weight="700">On user</text></g>
+      <g transform="translate(510,62)"><rect width="166" height="62" rx="14" fill="#101827"/><rect x="14" y="14" width="6" height="34" rx="3" fill="#3ef2b0"/><text x="30" y="28" fill="#94a3bb">Resolved</text><text x="30" y="46" fill="#eef2fb" font-size="15" font-weight="700">Closed</text></g>
+    </g>
+
+    <!-- ticket table -->
+    <g transform="translate(24,140)">
+      <rect width="652" height="258" rx="16" fill="#101827"/>
+      <text x="18" y="28" fill="#eef2fb" font-size="13" font-weight="600">Recent tickets</text>
+      <g font-size="10" fill="#94a3bb"><text x="18" y="58">TICKET</text><text x="100" y="58">FAULT</text><text x="330" y="58">PRIORITY</text><text x="430" y="58">ASSIGNED</text><text x="550" y="58">STATUS</text></g>
+      <line x1="18" y1="66" x2="634" y2="66" stroke="#ffffff" stroke-opacity="0.08"/>
+      <g font-size="12" fill="#eef2fb">
+        <text x="18" y="92" fill="#00c8ff" font-weight="600">#1052</text><text x="100" y="92">Cannot connect to network</text>
+        <rect x="330" y="78" width="56" height="20" rx="10" fill="#ff5f57" fill-opacity="0.16"/><text x="358" y="92" fill="#ff5f57" font-size="10" font-weight="600" text-anchor="middle">High</text>
+        <circle cx="440" cy="88" r="9" fill="#7c5cff"/><text x="456" y="92" fill="#c5d0e4" font-size="11">Technician</text>
+        <rect x="550" y="78" width="68" height="20" rx="10" fill="#febc2e" fill-opacity="0.16"/><text x="584" y="92" fill="#febc2e" font-size="10" font-weight="600" text-anchor="middle">In progress</text>
+
+        <text x="18" y="128" fill="#00c8ff" font-weight="600">#1051</text><text x="100" y="128">Printer not responding</text>
+        <rect x="330" y="114" width="56" height="20" rx="10" fill="#febc2e" fill-opacity="0.16"/><text x="358" y="128" fill="#febc2e" font-size="10" font-weight="600" text-anchor="middle">Medium</text>
+        <circle cx="440" cy="124" r="9" fill="#00c8ff"/><text x="456" y="128" fill="#c5d0e4" font-size="11">Technician</text>
+        <rect x="550" y="114" width="68" height="20" rx="10" fill="#ff5f57" fill-opacity="0.16"/><text x="584" y="128" fill="#ff5f57" font-size="10" font-weight="600" text-anchor="middle">Open</text>
+
+        <text x="18" y="164" fill="#00c8ff" font-weight="600">#1049</text><text x="100" y="164">Email account locked</text>
+        <rect x="330" y="150" width="56" height="20" rx="10" fill="#ff5f57" fill-opacity="0.16"/><text x="358" y="164" fill="#ff5f57" font-size="10" font-weight="600" text-anchor="middle">High</text>
+        <circle cx="440" cy="160" r="9" fill="#3ef2b0"/><text x="456" y="164" fill="#c5d0e4" font-size="11">Technician</text>
+        <rect x="550" y="150" width="68" height="20" rx="10" fill="#3ef2b0" fill-opacity="0.16"/><text x="584" y="164" fill="#3ef2b0" font-size="10" font-weight="600" text-anchor="middle">Resolved</text>
+
+        <text x="18" y="200" fill="#00c8ff" font-weight="600">#1046</text><text x="100" y="200">Software installation</text>
+        <rect x="330" y="186" width="56" height="20" rx="10" fill="#00c8ff" fill-opacity="0.16"/><text x="358" y="200" fill="#00c8ff" font-size="10" font-weight="600" text-anchor="middle">Low</text>
+        <circle cx="440" cy="196" r="9" fill="#febc2e"/><text x="456" y="200" fill="#c5d0e4" font-size="11">Technician</text>
+        <rect x="550" y="186" width="68" height="20" rx="10" fill="#00c8ff" fill-opacity="0.16"/><text x="584" y="200" fill="#00c8ff" font-size="10" font-weight="600" text-anchor="middle">Waiting</text>
+
+        <text x="18" y="236" fill="#00c8ff" font-weight="600">#1044</text><text x="100" y="236">Laptop battery issue</text>
+        <rect x="330" y="222" width="56" height="20" rx="10" fill="#febc2e" fill-opacity="0.16"/><text x="358" y="236" fill="#febc2e" font-size="10" font-weight="600" text-anchor="middle">Medium</text>
+        <circle cx="440" cy="232" r="9" fill="#7c5cff"/><text x="456" y="236" fill="#c5d0e4" font-size="11">Technician</text>
+        <rect x="550" y="222" width="68" height="20" rx="10" fill="#3ef2b0" fill-opacity="0.16"/><text x="584" y="236" fill="#3ef2b0" font-size="10" font-weight="600" text-anchor="middle">Resolved</text>
+      </g>
+    </g>
+  </g>
+</svg>

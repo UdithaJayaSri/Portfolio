@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00c8ff"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+    <radialGradient id="glowA" cx="0.15" cy="0.15" r="0.6"><stop offset="0" stop-color="#00c8ff" stop-opacity="0.25"/><stop offset="1" stop-color="#00c8ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowB" cx="0.9" cy="0.9" r="0.6"><stop offset="0" stop-color="#7c5cff" stop-opacity="0.3"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#070b14"/>
+  <rect width="800" height="500" fill="url(#glowA)"/><rect width="800" height="500" fill="url(#glowB)"/>
+
+  <g transform="translate(50,40)">
+    <rect width="700" height="420" rx="18" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="24" cy="22" r="5" fill="#ff5f57"/><circle cx="42" cy="22" r="5" fill="#febc2e"/><circle cx="60" cy="22" r="5" fill="#28c840"/>
+    <text x="84" y="26" fill="#94a3bb" font-size="12">Room Reservation</text>
+    <line x1="0" y1="44" x2="700" y2="44" stroke="#ffffff" stroke-opacity="0.08"/>
+
+    <text x="28" y="80" fill="#eef2fb" font-size="16" font-weight="700">This Week</text>
+    <g transform="translate(540,60)"><rect width="130" height="32" rx="16" fill="url(#g)"/><text x="65" y="21" fill="#04121a" font-size="12" font-weight="700" text-anchor="middle">+ Book a Room</text></g>
+
+    <!-- header row -->
+    <g font-size="11" fill="#94a3bb" text-anchor="middle">
+      <text x="200" y="124">Mon</text><text x="300" y="124">Tue</text><text x="400" y="124">Wed</text><text x="500" y="124">Thu</text><text x="600" y="124">Fri</text>
+    </g>
+    <!-- grid -->
+    <g stroke="#ffffff" stroke-opacity="0.07">
+      <line x1="150" y1="136" x2="650" y2="136"/><line x1="150" y1="206" x2="650" y2="206"/><line x1="150" y1="276" x2="650" y2="276"/><line x1="150" y1="346" x2="650" y2="346"/>
+      <line x1="150" y1="136" x2="150" y2="346"/><line x1="250" y1="136" x2="250" y2="346"/><line x1="350" y1="136" x2="350" y2="346"/><line x1="450" y1="136" x2="450" y2="346"/><line x1="550" y1="136" x2="550" y2="346"/><line x1="650" y1="136" x2="650" y2="346"/>
+    </g>
+    <g font-size="12" fill="#eef2fb" font-weight="600">
+      <text x="28" y="176">Room A</text><text x="28" y="246">Room B</text><text x="28" y="316">Room C</text>
+    </g>
+    <g font-size="10" fill="#94a3bb">
+      <text x="28" y="192">Capacity 12</text><text x="28" y="262">Capacity 8</text><text x="28" y="332">Capacity 20</text>
+    </g>
+
+    <!-- bookings -->
+    <g font-size="10" font-weight="600">
+      <rect x="158" y="146" width="84" height="50" rx="10" fill="#00c8ff" fill-opacity="0.22" stroke="#00c8ff"/><text x="168" y="168" fill="#00c8ff">Team Sync</text><text x="168" y="184" fill="#94a3bb" font-weight="400">9:00 – 10:30</text>
+      <rect x="358" y="146" width="84" height="50" rx="10" fill="#7c5cff" fill-opacity="0.25" stroke="#7c5cff"/><text x="368" y="168" fill="#b3a2ff">Workshop</text><text x="368" y="184" fill="#94a3bb" font-weight="400">10:00 – 12:00</text>
+      <rect x="258" y="216" width="84" height="50" rx="10" fill="#3ef2b0" fill-opacity="0.2" stroke="#3ef2b0"/><text x="268" y="238" fill="#3ef2b0">Interviews</text><text x="268" y="254" fill="#94a3bb" font-weight="400">13:00 – 16:00</text>
+      <rect x="558" y="216" width="84" height="50" rx="10" fill="#00c8ff" fill-opacity="0.22" stroke="#00c8ff"/><text x="568" y="238" fill="#00c8ff">Review</text><text x="568" y="254" fill="#94a3bb" font-weight="400">11:00 – 12:00</text>
+      <rect x="458" y="286" width="84" height="50" rx="10" fill="#febc2e" fill-opacity="0.2" stroke="#febc2e"/><text x="468" y="308" fill="#febc2e">Training</text><text x="468" y="324" fill="#94a3bb" font-weight="400">09:00 – 15:00</text>
+      <rect x="158" y="286" width="84" height="50" rx="10" fill="#7c5cff" fill-opacity="0.25" stroke="#7c5cff"/><text x="168" y="308" fill="#b3a2ff">Planning</text><text x="168" y="324" fill="#94a3bb" font-weight="400">14:00 – 15:00</text>
+    </g>
+
+    <!-- legend -->
+    <g font-size="11" fill="#94a3bb">
+      <circle cx="160" cy="382" r="5" fill="#3ef2b0"/><text x="172" y="386">Available</text>
+      <circle cx="250" cy="382" r="5" fill="#00c8ff"/><text x="262" y="386">Booked</text>
+      <circle cx="330" cy="382" r="5" fill="#febc2e"/><text x="342" y="386">Pending</text>
+    </g>
+  </g>
+</svg>

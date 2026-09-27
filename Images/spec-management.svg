@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00c8ff"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+    <radialGradient id="glowA" cx="0.15" cy="0.15" r="0.6"><stop offset="0" stop-color="#00c8ff" stop-opacity="0.25"/><stop offset="1" stop-color="#00c8ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowB" cx="0.9" cy="0.9" r="0.6"><stop offset="0" stop-color="#7c5cff" stop-opacity="0.3"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#070b14"/>
+  <rect width="800" height="500" fill="url(#glowA)"/><rect width="800" height="500" fill="url(#glowB)"/>
+  <g transform="translate(50,40)">
+    <rect width="700" height="420" rx="18" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="24" cy="22" r="5" fill="#ff5f57"/><circle cx="42" cy="22" r="5" fill="#febc2e"/><circle cx="60" cy="22" r="5" fill="#28c840"/>
+    <text x="84" y="26" fill="#94a3bb" font-size="12">Specification Management</text>
+    <line x1="0" y1="44" x2="700" y2="44" stroke="#ffffff" stroke-opacity="0.08"/>
+
+    <!-- list -->
+    <g transform="translate(24,62)">
+      <rect width="230" height="336" rx="16" fill="#101827"/>
+      <text x="18" y="28" fill="#eef2fb" font-size="13" font-weight="600">Specifications</text>
+      <rect x="150" y="12" width="66" height="24" rx="12" fill="url(#g)"/><text x="183" y="28" fill="#04121a" font-size="11" font-weight="700" text-anchor="middle">+ New</text>
+      <g transform="translate(14,50)">
+        <rect width="202" height="50" rx="12" fill="#00c8ff" fill-opacity="0.12" stroke="#00c8ff" stroke-opacity="0.5"/><text x="14" y="22" fill="#eef2fb" font-size="12" font-weight="600">Desktop Computer</text><text x="14" y="38" fill="#94a3bb" font-size="10">SPEC-0142 · Draft</text>
+      </g>
+      <g transform="translate(14,110)"><rect width="202" height="50" rx="12" fill="#141d2e"/><text x="14" y="22" fill="#eef2fb" font-size="12" font-weight="600">Network Switch 24-port</text><text x="14" y="38" fill="#94a3bb" font-size="10">SPEC-0141 · Approved</text></g>
+      <g transform="translate(14,170)"><rect width="202" height="50" rx="12" fill="#141d2e"/><text x="14" y="22" fill="#eef2fb" font-size="12" font-weight="600">Laser Printer</text><text x="14" y="38" fill="#94a3bb" font-size="10">SPEC-0139 · Approved</text></g>
+      <g transform="translate(14,230)"><rect width="202" height="50" rx="12" fill="#141d2e"/><text x="14" y="22" fill="#eef2fb" font-size="12" font-weight="600">UPS 1kVA</text><text x="14" y="38" fill="#94a3bb" font-size="10">SPEC-0137 · In review</text></g>
+    </g>
+
+    <!-- detail -->
+    <g transform="translate(270,62)">
+      <rect width="406" height="336" rx="16" fill="#101827"/>
+      <text x="20" y="32" fill="#eef2fb" font-size="15" font-weight="700">Desktop Computer</text>
+      <rect x="322" y="16" width="64" height="22" rx="11" fill="#febc2e" fill-opacity="0.18"/><text x="354" y="31" fill="#febc2e" font-size="10" font-weight="600" text-anchor="middle">Draft</text>
+      <g font-size="11" fill="#94a3bb">
+        <text x="20" y="66">Processor</text><rect x="20" y="72" width="172" height="30" rx="9" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/><text x="32" y="92" fill="#eef2fb" font-size="12">Intel Core i5 or better</text>
+        <text x="214" y="66">Memory</text><rect x="214" y="72" width="172" height="30" rx="9" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/><text x="226" y="92" fill="#eef2fb" font-size="12">16 GB DDR4</text>
+        <text x="20" y="126">Storage</text><rect x="20" y="132" width="172" height="30" rx="9" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/><text x="32" y="152" fill="#eef2fb" font-size="12">512 GB SSD</text>
+        <text x="214" y="126">Warranty</text><rect x="214" y="132" width="172" height="30" rx="9" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/><text x="226" y="152" fill="#eef2fb" font-size="12">3 years</text>
+        <text x="20" y="186">Notes</text><rect x="20" y="192" width="366" height="60" rx="9" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/>
+        <rect x="32" y="206" width="240" height="6" rx="3" fill="#94a3bb" fill-opacity="0.45"/><rect x="32" y="222" width="180" height="6" rx="3" fill="#94a3bb" fill-opacity="0.3"/>
+      </g>
+      <rect x="20" y="284" width="96" height="32" rx="16" fill="url(#g)"/><text x="68" y="305" fill="#04121a" font-size="12" font-weight="700" text-anchor="middle">Save</text>
+      <rect x="126" y="284" width="96" height="32" rx="16" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.15"/><text x="174" y="305" fill="#eef2fb" font-size="12" text-anchor="middle">Export</text>
+    </g>
+  </g>
+</svg>

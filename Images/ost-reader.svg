@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00c8ff"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+    <radialGradient id="glowA" cx="0.15" cy="0.15" r="0.6"><stop offset="0" stop-color="#00c8ff" stop-opacity="0.25"/><stop offset="1" stop-color="#00c8ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowB" cx="0.9" cy="0.9" r="0.6"><stop offset="0" stop-color="#7c5cff" stop-opacity="0.3"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#070b14"/>
+  <rect width="800" height="500" fill="url(#glowA)"/><rect width="800" height="500" fill="url(#glowB)"/>
+  <g transform="translate(50,40)">
+    <rect width="700" height="420" rx="18" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="24" cy="22" r="5" fill="#ff5f57"/><circle cx="42" cy="22" r="5" fill="#febc2e"/><circle cx="60" cy="22" r="5" fill="#28c840"/>
+    <text x="84" y="26" fill="#94a3bb" font-size="12">OST File Reader</text>
+    <rect x="536" y="10" width="140" height="24" rx="12" fill="url(#g)"/><text x="606" y="26" fill="#04121a" font-size="11" font-weight="700" text-anchor="middle">Open OST file…</text>
+    <line x1="0" y1="44" x2="700" y2="44" stroke="#ffffff" stroke-opacity="0.08"/>
+
+    <!-- folders -->
+    <g transform="translate(0,44)">
+      <rect width="150" height="376" fill="#0d1421"/>
+      <text x="16" y="30" fill="#94a3bb" font-size="10" font-weight="600">MAILBOX</text>
+      <g font-size="12" fill="#c5d0e4">
+        <rect x="10" y="44" width="130" height="30" rx="8" fill="#00c8ff" fill-opacity="0.12"/><rect x="20" y="54" width="16" height="11" rx="2" fill="#00c8ff"/><text x="46" y="63" fill="#00c8ff" font-weight="600">Inbox</text>
+        <rect x="20" y="92" width="16" height="11" rx="2" fill="#7c5cff"/><text x="46" y="101">Sent Items</text>
+        <rect x="20" y="130" width="16" height="11" rx="2" fill="#febc2e"/><text x="46" y="139">Drafts</text>
+        <rect x="20" y="168" width="16" height="11" rx="2" fill="#3ef2b0"/><text x="46" y="177">Calendar</text>
+        <rect x="20" y="206" width="16" height="11" rx="2" fill="#ff7a59"/><text x="46" y="215">Contacts</text>
+      </g>
+    </g>
+
+    <!-- message list -->
+    <g transform="translate(160,56)">
+      <g><rect width="220" height="62" rx="12" fill="#00c8ff" fill-opacity="0.1" stroke="#00c8ff" stroke-opacity="0.4"/><circle cx="22" cy="31" r="12" fill="#00c8ff"/><rect x="44" y="16" width="110" height="8" rx="4" fill="#eef2fb" fill-opacity="0.85"/><rect x="44" y="32" width="150" height="6" rx="3" fill="#94a3bb" fill-opacity="0.5"/><rect x="44" y="45" width="90" height="5" rx="2" fill="#94a3bb" fill-opacity="0.3"/></g>
+      <g transform="translate(0,70)"><rect width="220" height="62" rx="12" fill="#101827"/><circle cx="22" cy="31" r="12" fill="#7c5cff"/><rect x="44" y="16" width="90" height="8" rx="4" fill="#eef2fb" fill-opacity="0.85"/><rect x="44" y="32" width="140" height="6" rx="3" fill="#94a3bb" fill-opacity="0.5"/><rect x="44" y="45" width="100" height="5" rx="2" fill="#94a3bb" fill-opacity="0.3"/></g>
+      <g transform="translate(0,140)"><rect width="220" height="62" rx="12" fill="#101827"/><circle cx="22" cy="31" r="12" fill="#3ef2b0"/><rect x="44" y="16" width="120" height="8" rx="4" fill="#eef2fb" fill-opacity="0.85"/><rect x="44" y="32" width="130" height="6" rx="3" fill="#94a3bb" fill-opacity="0.5"/><rect x="44" y="45" width="80" height="5" rx="2" fill="#94a3bb" fill-opacity="0.3"/></g>
+      <g transform="translate(0,210)"><rect width="220" height="62" rx="12" fill="#101827"/><circle cx="22" cy="31" r="12" fill="#febc2e"/><rect x="44" y="16" width="100" height="8" rx="4" fill="#eef2fb" fill-opacity="0.85"/><rect x="44" y="32" width="150" height="6" rx="3" fill="#94a3bb" fill-opacity="0.5"/><rect x="44" y="45" width="70" height="5" rx="2" fill="#94a3bb" fill-opacity="0.3"/></g>
+    </g>
+
+    <!-- preview -->
+    <g transform="translate(396,56)">
+      <rect width="280" height="342" rx="16" fill="#101827"/>
+      <text x="18" y="32" fill="#eef2fb" font-size="14" font-weight="700">Message subject</text>
+      <circle cx="30" cy="62" r="12" fill="#00c8ff"/><rect x="52" y="54" width="100" height="7" rx="3" fill="#eef2fb" fill-opacity="0.8"/><rect x="52" y="67" width="70" height="5" rx="2" fill="#94a3bb" fill-opacity="0.5"/>
+      <line x1="18" y1="92" x2="262" y2="92" stroke="#ffffff" stroke-opacity="0.08"/>
+      <g fill="#94a3bb"><rect x="18" y="108" width="240" height="6" rx="3" fill-opacity="0.5"/><rect x="18" y="124" width="220" height="6" rx="3" fill-opacity="0.4"/><rect x="18" y="140" width="236" height="6" rx="3" fill-opacity="0.4"/><rect x="18" y="156" width="150" height="6" rx="3" fill-opacity="0.3"/></g>
+      <rect x="18" y="190" width="150" height="40" rx="10" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/><rect x="28" y="200" width="20" height="20" rx="5" fill="#ff5f57"/><text x="58" y="215" fill="#eef2fb" font-size="11">Attachment.pdf</text>
+      <rect x="18" y="290" width="130" height="32" rx="16" fill="url(#g)"/><text x="83" y="311" fill="#04121a" font-size="12" font-weight="700" text-anchor="middle">Export message</text>
+    </g>
+  </g>
+</svg>

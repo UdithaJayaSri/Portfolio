@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00c8ff"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00c8ff" stop-opacity="0.35"/><stop offset="1" stop-color="#00c8ff" stop-opacity="0"/></linearGradient>
+    <radialGradient id="glowA" cx="0.15" cy="0.15" r="0.6"><stop offset="0" stop-color="#00c8ff" stop-opacity="0.25"/><stop offset="1" stop-color="#00c8ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowB" cx="0.9" cy="0.9" r="0.6"><stop offset="0" stop-color="#7c5cff" stop-opacity="0.3"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#070b14"/>
+  <rect width="800" height="500" fill="url(#glowA)"/><rect width="800" height="500" fill="url(#glowB)"/>
+
+  <g transform="translate(50,40)">
+    <rect width="700" height="420" rx="18" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="24" cy="22" r="5" fill="#ff5f57"/><circle cx="42" cy="22" r="5" fill="#febc2e"/><circle cx="60" cy="22" r="5" fill="#28c840"/>
+    <text x="84" y="26" fill="#94a3bb" font-size="12">Network Monitoring · Live</text>
+    <circle cx="640" cy="22" r="5" fill="#3ef2b0"/><text x="652" y="26" fill="#3ef2b0" font-size="11" font-weight="600">LIVE</text>
+    <line x1="0" y1="44" x2="700" y2="44" stroke="#ffffff" stroke-opacity="0.08"/>
+
+    <!-- stat tiles -->
+    <g font-size="11">
+      <g transform="translate(24,62)"><rect width="150" height="74" rx="14" fill="#101827"/><text x="16" y="26" fill="#94a3bb">Devices online</text><text x="16" y="56" fill="#eef2fb" font-size="24" font-weight="700">Online</text></g>
+      <g transform="translate(186,62)"><rect width="150" height="74" rx="14" fill="#101827"/><text x="16" y="26" fill="#94a3bb">Latency</text><text x="16" y="56" fill="#00c8ff" font-size="24" font-weight="700">Low</text></g>
+      <g transform="translate(348,62)"><rect width="150" height="74" rx="14" fill="#101827"/><text x="16" y="26" fill="#94a3bb">Uptime</text><text x="16" y="56" fill="#3ef2b0" font-size="24" font-weight="700">Stable</text></g>
+      <g transform="translate(510,62)"><rect width="166" height="74" rx="14" fill="#101827"/><text x="16" y="26" fill="#94a3bb">Alerts</text><text x="16" y="56" fill="#febc2e" font-size="24" font-weight="700">Watching</text></g>
+    </g>
+
+    <!-- chart -->
+    <g transform="translate(24,152)">
+      <rect width="440" height="250" rx="16" fill="#101827"/>
+      <text x="18" y="28" fill="#eef2fb" font-size="13" font-weight="600">Traffic</text>
+      <g stroke="#ffffff" stroke-opacity="0.06">
+        <line x1="18" y1="70" x2="422" y2="70"/><line x1="18" y1="110" x2="422" y2="110"/><line x1="18" y1="150" x2="422" y2="150"/><line x1="18" y1="190" x2="422" y2="190"/>
+      </g>
+      <path d="M18 176 L58 150 L98 160 L138 120 L178 132 L218 96 L258 118 L298 84 L338 104 L378 70 L422 88 L422 214 L18 214 Z" fill="url(#area)"/>
+      <path d="M18 176 L58 150 L98 160 L138 120 L178 132 L218 96 L258 118 L298 84 L338 104 L378 70 L422 88" fill="none" stroke="url(#g)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="378" cy="70" r="5" fill="#00c8ff"/><circle cx="378" cy="70" r="11" fill="#00c8ff" fill-opacity="0.2"/>
+      <g fill="#94a3bb" font-size="10"><text x="18" y="236">-60m</text><text x="200" y="236">-30m</text><text x="392" y="236">now</text></g>
+    </g>
+
+    <!-- device list -->
+    <g transform="translate(480,152)">
+      <rect width="196" height="250" rx="16" fill="#101827"/>
+      <text x="18" y="28" fill="#eef2fb" font-size="13" font-weight="600">Devices</text>
+      <g font-size="12" fill="#c5d0e4">
+        <circle cx="26" cy="58" r="5" fill="#3ef2b0"/><text x="40" y="62">Core Switch</text>
+        <circle cx="26" cy="88" r="5" fill="#3ef2b0"/><text x="40" y="92">Firewall</text>
+        <circle cx="26" cy="118" r="5" fill="#3ef2b0"/><text x="40" y="122">File Server</text>
+        <circle cx="26" cy="148" r="5" fill="#febc2e"/><text x="40" y="152">Wi-Fi AP 3</text>
+        <circle cx="26" cy="178" r="5" fill="#3ef2b0"/><text x="40" y="182">Router</text>
+        <circle cx="26" cy="208" r="5" fill="#ff5f57"/><text x="40" y="212">Printer 2</text>
+      </g>
+      <g font-size="10" fill="#94a3bb" text-anchor="end">
+        <text x="180" y="62">OK</text><text x="180" y="92">OK</text><text x="180" y="122">OK</text><text x="180" y="152" fill="#febc2e">Slow</text><text x="180" y="182">OK</text><text x="180" y="212" fill="#ff5f57">Down</text>
+      </g>
+    </g>
+  </g>
+</svg>

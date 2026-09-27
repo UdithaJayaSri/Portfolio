@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00c8ff"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+    <radialGradient id="glowA" cx="0.15" cy="0.15" r="0.6"><stop offset="0" stop-color="#00c8ff" stop-opacity="0.25"/><stop offset="1" stop-color="#00c8ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowB" cx="0.9" cy="0.9" r="0.6"><stop offset="0" stop-color="#7c5cff" stop-opacity="0.3"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#070b14"/>
+  <rect width="800" height="500" fill="url(#glowA)"/><rect width="800" height="500" fill="url(#glowB)"/>
+  <g transform="translate(50,40)">
+    <rect width="700" height="420" rx="18" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="24" cy="22" r="5" fill="#ff5f57"/><circle cx="42" cy="22" r="5" fill="#febc2e"/><circle cx="60" cy="22" r="5" fill="#28c840"/>
+    <text x="84" y="26" fill="#94a3bb" font-size="12">Hardware Inventory</text>
+    <line x1="0" y1="44" x2="700" y2="44" stroke="#ffffff" stroke-opacity="0.08"/>
+
+    <!-- category tiles -->
+    <g font-size="11">
+      <g transform="translate(24,62)"><rect width="150" height="66" rx="14" fill="#101827"/><rect x="14" y="16" width="34" height="34" rx="9" fill="url(#g)"/><rect x="21" y="24" width="20" height="13" rx="2" fill="none" stroke="#04121a" stroke-width="2"/><rect x="26" y="40" width="10" height="3" rx="1" fill="#04121a"/><text x="60" y="30" fill="#94a3bb">Computers</text><text x="60" y="48" fill="#eef2fb" font-size="14" font-weight="700">Laptops &amp; PCs</text></g>
+      <g transform="translate(186,62)"><rect width="150" height="66" rx="14" fill="#101827"/><rect x="14" y="16" width="34" height="34" rx="9" fill="#7c5cff"/><rect x="21" y="30" width="20" height="9" rx="2" fill="none" stroke="#fff" stroke-width="2"/><rect x="25" y="24" width="12" height="6" fill="#fff"/><text x="60" y="30" fill="#94a3bb">Printers</text><text x="60" y="48" fill="#eef2fb" font-size="14" font-weight="700">Peripherals</text></g>
+      <g transform="translate(348,62)"><rect width="150" height="66" rx="14" fill="#101827"/><rect x="14" y="16" width="34" height="34" rx="9" fill="#3ef2b0"/><circle cx="31" cy="33" r="3" fill="#04121a"/><circle cx="23" cy="26" r="2" fill="#04121a"/><circle cx="39" cy="26" r="2" fill="#04121a"/><circle cx="31" cy="42" r="2" fill="#04121a"/><text x="60" y="30" fill="#94a3bb">Network</text><text x="60" y="48" fill="#eef2fb" font-size="14" font-weight="700">Devices</text></g>
+      <g transform="translate(510,62)"><rect width="166" height="66" rx="14" fill="#101827"/><rect x="14" y="16" width="34" height="34" rx="9" fill="#febc2e"/><rect x="22" y="24" width="18" height="18" fill="none" stroke="#04121a" stroke-width="2"/><rect x="26" y="28" width="4" height="4" fill="#04121a"/><rect x="33" y="35" width="4" height="4" fill="#04121a"/><text x="60" y="30" fill="#94a3bb">Asset tags</text><text x="60" y="48" fill="#eef2fb" font-size="14" font-weight="700">QR labelled</text></g>
+    </g>
+
+    <!-- table -->
+    <g transform="translate(24,146)">
+      <rect width="652" height="256" rx="16" fill="#101827"/>
+      <text x="18" y="28" fill="#eef2fb" font-size="13" font-weight="600">Assets</text>
+      <rect x="470" y="12" width="164" height="24" rx="12" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/><text x="484" y="28" fill="#94a3bb" font-size="11">Search assets…</text>
+      <g font-size="10" fill="#94a3bb"><text x="18" y="60">ASSET</text><text x="230" y="60">TYPE</text><text x="360" y="60">LOCATION</text><text x="500" y="60">STATUS</text></g>
+      <line x1="18" y1="68" x2="634" y2="68" stroke="#ffffff" stroke-opacity="0.08"/>
+      <g font-size="12" fill="#eef2fb">
+        <text x="18" y="94" font-weight="600">Workstation 01</text><text x="230" y="94" fill="#c5d0e4">Desktop</text><text x="360" y="94" fill="#c5d0e4">Office A</text><rect x="500" y="80" width="70" height="20" rx="10" fill="#3ef2b0" fill-opacity="0.16"/><text x="535" y="94" fill="#3ef2b0" font-size="10" font-weight="600" text-anchor="middle">In use</text>
+        <text x="18" y="126" font-weight="600">Laptop 14</text><text x="230" y="126" fill="#c5d0e4">Laptop</text><text x="360" y="126" fill="#c5d0e4">Store</text><rect x="500" y="112" width="70" height="20" rx="10" fill="#00c8ff" fill-opacity="0.16"/><text x="535" y="126" fill="#00c8ff" font-size="10" font-weight="600" text-anchor="middle">Available</text>
+        <text x="18" y="158" font-weight="600">Printer 03</text><text x="230" y="158" fill="#c5d0e4">Printer</text><text x="360" y="158" fill="#c5d0e4">Office B</text><rect x="500" y="144" width="70" height="20" rx="10" fill="#3ef2b0" fill-opacity="0.16"/><text x="535" y="158" fill="#3ef2b0" font-size="10" font-weight="600" text-anchor="middle">In use</text>
+        <text x="18" y="190" font-weight="600">Switch 02</text><text x="230" y="190" fill="#c5d0e4">Network</text><text x="360" y="190" fill="#c5d0e4">Server room</text><rect x="500" y="176" width="70" height="20" rx="10" fill="#febc2e" fill-opacity="0.16"/><text x="535" y="190" fill="#febc2e" font-size="10" font-weight="600" text-anchor="middle">Repair</text>
+        <text x="18" y="222" font-weight="600">Monitor 21</text><text x="230" y="222" fill="#c5d0e4">Monitor</text><text x="360" y="222" fill="#c5d0e4">Office A</text><rect x="500" y="208" width="70" height="20" rx="10" fill="#3ef2b0" fill-opacity="0.16"/><text x="535" y="222" fill="#3ef2b0" font-size="10" font-weight="600" text-anchor="middle">In use</text>
+      </g>
+    </g>
+  </g>
+</svg>

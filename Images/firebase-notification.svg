@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00c8ff"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+    <linearGradient id="fire" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff7a59"/><stop offset="1" stop-color="#febc2e"/></linearGradient>
+    <radialGradient id="glowA" cx="0.15" cy="0.15" r="0.6"><stop offset="0" stop-color="#00c8ff" stop-opacity="0.25"/><stop offset="1" stop-color="#00c8ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowB" cx="0.9" cy="0.9" r="0.6"><stop offset="0" stop-color="#7c5cff" stop-opacity="0.3"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#070b14"/>
+  <rect width="800" height="500" fill="url(#glowA)"/><rect width="800" height="500" fill="url(#glowB)"/>
+
+  <!-- composer window -->
+  <g transform="translate(50,60)">
+    <rect width="400" height="380" rx="18" fill="#0a0f1a" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="24" cy="22" r="5" fill="#ff5f57"/><circle cx="42" cy="22" r="5" fill="#febc2e"/><circle cx="60" cy="22" r="5" fill="#28c840"/>
+    <text x="84" y="26" fill="#94a3bb" font-size="12">Notification Composer</text>
+    <line x1="0" y1="44" x2="400" y2="44" stroke="#ffffff" stroke-opacity="0.08"/>
+    <path d="M30 96 L44 60 L58 82 L64 72 L74 96 L52 106 Z" fill="url(#fire)" transform="translate(0,4)"/>
+    <text x="90" y="86" fill="#eef2fb" font-size="15" font-weight="700">Firebase Cloud Messaging</text>
+    <g font-size="11" fill="#94a3bb">
+      <text x="24" y="132">Title</text><rect x="24" y="138" width="352" height="32" rx="10" fill="#101827" stroke="#ffffff" stroke-opacity="0.12"/><text x="36" y="159" fill="#eef2fb" font-size="12">Important announcement</text>
+      <text x="24" y="196">Message</text><rect x="24" y="202" width="352" height="66" rx="10" fill="#101827" stroke="#ffffff" stroke-opacity="0.12"/>
+      <rect x="36" y="216" width="260" height="6" rx="3" fill="#94a3bb" fill-opacity="0.5"/><rect x="36" y="232" width="200" height="6" rx="3" fill="#94a3bb" fill-opacity="0.35"/>
+      <text x="24" y="292">Send to</text>
+    </g>
+    <rect x="24" y="298" width="80" height="24" rx="12" fill="#00c8ff" fill-opacity="0.16" stroke="#00c8ff"/><text x="64" y="314" fill="#00c8ff" font-size="11" font-weight="600" text-anchor="middle">All users</text>
+    <rect x="112" y="298" width="80" height="24" rx="12" fill="#ffffff" fill-opacity="0.06"/><text x="152" y="314" fill="#c5d0e4" font-size="11" text-anchor="middle">Group</text>
+    <rect x="24" y="336" width="130" height="30" rx="15" fill="url(#g)"/><text x="89" y="356" fill="#04121a" font-size="12" font-weight="700" text-anchor="middle">Send notification</text>
+  </g>
+
+  <!-- phone -->
+  <g transform="translate(500,30)">
+    <rect width="220" height="440" rx="34" fill="#0b1220" stroke="#ffffff" stroke-opacity="0.18" stroke-width="2"/>
+    <rect x="80" y="10" width="60" height="6" rx="3" fill="#ffffff" fill-opacity="0.15"/>
+    <text x="110" y="70" fill="#eef2fb" font-size="30" font-weight="700" text-anchor="middle">9:41</text>
+    <g transform="translate(14,100)">
+      <rect width="192" height="70" rx="16" fill="#141d2e" stroke="#00c8ff" stroke-opacity="0.4"/>
+      <rect x="12" y="14" width="26" height="26" rx="8" fill="url(#fire)"/>
+      <text x="48" y="26" fill="#94a3bb" font-size="9">MY APP · now</text>
+      <text x="48" y="42" fill="#eef2fb" font-size="12" font-weight="700">Important announcement</text>
+      <text x="48" y="58" fill="#94a3bb" font-size="10">Tap to read the full message</text>
+    </g>
+    <g transform="translate(14,182)">
+      <rect width="192" height="60" rx="16" fill="#141d2e"/>
+      <rect x="12" y="12" width="26" height="26" rx="8" fill="#7c5cff"/>
+      <text x="48" y="24" fill="#94a3bb" font-size="9">MY APP · 5m</text>
+      <text x="48" y="40" fill="#eef2fb" font-size="12" font-weight="600">Reminder</text>
+      <text x="48" y="54" fill="#94a3bb" font-size="10">Meeting starts soon</text>
+    </g>
+    <g transform="translate(14,254)">
+      <rect width="192" height="60" rx="16" fill="#141d2e"/>
+      <rect x="12" y="12" width="26" height="26" rx="8" fill="#3ef2b0"/>
+      <text x="48" y="24" fill="#94a3bb" font-size="9">MY APP · 1h</text>
+      <text x="48" y="40" fill="#eef2fb" font-size="12" font-weight="600">Update available</text>
+      <text x="48" y="54" fill="#94a3bb" font-size="10">New version is ready</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Uditha Jaya Sri – Software Developer | Portfolio</title>
+    <meta name="description" content="Portfolio of Uditha Jaya Sri — software developer and IT Technical Officer building ASP.NET MVC web systems, Flutter mobile apps and cross-platform desktop tools. Open to new projects.">
+    <meta name="theme-color" content="#06080f">
+    <link rel="icon" type="image/jpeg" href="Images/ujs.jpeg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Background layers -->
+    <canvas id="bg-canvas"></canvas>
+    <div class="grid-overlay"></div>
+    <div class="cursor-glow"></div>
+    <div class="scroll-progress"></div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certs</a></li>
+                <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Home / Hero -->
+    <section id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-eyebrow"><span class="dot"></span>Open to software development projects</span>
+                <h1>Hi, I'm <span class="grad-text">Uditha Jaya Sri</span></h1>
+                <div class="typing-line">
+                    <span id="typing"></span><span class="cursor-bar"></span>
+                </div>
+                <p>I build reliable software and keep IT running smoothly — from ASP.NET MVC web systems and
+                    Flutter mobile apps to Electron desktop tools, backed by hands-on networking, cloud and
+                    infrastructure experience.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> View My Work</a>
+                    <a href="#contact" class="btn btn-ghost"><i class="fa-regular fa-paper-plane"></i> Get in Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><strong>16</strong><span>Projects built</span></div>
+                    <div class="stat"><strong>3</strong><span>Platforms</span></div>
+                    <div class="stat"><strong>Full-Stack</strong><span>Backend to UI</span></div>
+                </div>
+                <div class="social-row">
+                    <a href="mailto:ujs.live@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/uditha" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/UdithaJayaSri" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/share/16TQiRdvRa/" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.credly.com/users/uditha-jaya-sri" target="_blank" rel="noopener" title="Credly Badges"><i class="fa-solid fa-certificate"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-wrapper">
+                    <div class="profile-ring"></div>
+                    <div class="profile-glow"></div>
+                    <img src="Images/ujs.jpeg" alt="Uditha Jaya Sri" class="profile-img">
+                    <span class="float-chip c1"><i class="fa-solid fa-code"></i> ASP.NET MVC</span>
+                    <span class="float-chip c2"><i class="fa-solid fa-mobile-screen-button"></i> Flutter</span>
+                    <span class="float-chip c3"><i class="fa-brands fa-aws"></i> AWS</span>
+                    <span class="float-chip c4"><i class="fa-brands fa-microsoft"></i> Office 365</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech marquee -->
+    <div class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-track">
+                <span class="chip"><i class="fa-solid fa-code"></i> ASP.NET MVC</span>
+                <span class="chip"><i class="fa-solid fa-hashtag"></i> C#</span>
+                <span class="chip"><i class="fa-solid fa-database"></i> SQL Server</span>
+                <span class="chip"><i class="fa-solid fa-mobile-screen-button"></i> Flutter</span>
+                <span class="chip"><i class="fa-solid fa-bolt"></i> Dart</span>
+                <span class="chip"><i class="fa-solid fa-desktop"></i> Electron</span>
+                <span class="chip"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                <span class="chip"><i class="fa-brands fa-php"></i> PHP</span>
+                <span class="chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="chip"><i class="fa-brands fa-android"></i> Android</span>
+                <span class="chip"><i class="fa-solid fa-fire"></i> Firebase</span>
+                <span class="chip"><i class="fa-brands fa-aws"></i> AWS</span>
+                <span class="chip"><i class="fa-brands fa-microsoft"></i> Office 365</span>
+                <span class="chip"><i class="fa-solid fa-network-wired"></i> Networking</span>
+                <!-- duplicate set for seamless loop -->
+                <span class="chip"><i class="fa-solid fa-code"></i> ASP.NET MVC</span>
+                <span class="chip"><i class="fa-solid fa-hashtag"></i> C#</span>
+                <span class="chip"><i class="fa-solid fa-database"></i> SQL Server</span>
+                <span class="chip"><i class="fa-solid fa-mobile-screen-button"></i> Flutter</span>
+                <span class="chip"><i class="fa-solid fa-bolt"></i> Dart</span>
+                <span class="chip"><i class="fa-solid fa-desktop"></i> Electron</span>
+                <span class="chip"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                <span class="chip"><i class="fa-brands fa-php"></i> PHP</span>
+                <span class="chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="chip"><i class="fa-brands fa-android"></i> Android</span>
+                <span class="chip"><i class="fa-solid fa-fire"></i> Firebase</span>
+                <span class="chip"><i class="fa-brands fa-aws"></i> AWS</span>
+                <span class="chip"><i class="fa-brands fa-microsoft"></i> Office 365</span>
+                <span class="chip"><i class="fa-solid fa-network-wired"></i> Networking</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About <span class="grad-text">Me</span></h2>
+            </div>
+            <div class="bento">
+                <div class="card b-bio reveal">
+                    <h3>Software developer with a strong IT foundation</h3>
+                    <p>I'm a <strong>Software Developer</strong> and <strong>IT Technical Officer</strong> with
+                        hands-on experience in infrastructure support, <strong>networking</strong>, server management,
+                        application troubleshooting, and <strong>AWS</strong> and <strong>Office 365</strong> administration.</p>
+                    <p>I design and build real applications: <strong>ASP.NET MVC</strong> web systems on SQL Server,
+                        <strong>Flutter</strong> mobile apps backed by .NET APIs, business systems for IT fault ticketing, feedback,
+                        files, room and meeting management, real-time network and VPN monitoring dashboards, and
+                        cross-platform tools like a desktop, Android and browser-extension video downloader.</p>
+                    <p>I'm actively looking for <strong>new software development projects and opportunities</strong>
+                        where I can turn ideas into dependable, well-built software.</p>
+                    <p>I keep learning too — recently earning Cisco badges in <strong>Networking Basics</strong>,
+                        <strong>Cybersecurity</strong> and <strong>Modern AI</strong> — and I enjoy solving practical
+                        problems and delivering tools people actually use every day.</p>
+                </div>
+                <div class="card b-facts reveal">
+                    <div class="fact-list">
+                        <div class="fact">
+                            <div class="fact-icon"><i class="fa-solid fa-briefcase"></i></div>
+                            <div><small>Role</small><span>Software Developer &amp; IT Officer</span></div>
+                        </div>
+                        <div class="fact">
+                            <div class="fact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div><small>Based in</small><span>Sri Lanka</span></div>
+                        </div>
+                        <div class="fact">
+                            <div class="fact-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <div><small>Builds for</small><span>Web · Desktop · Mobile</span></div>
+                        </div>
+                        <div class="fact">
+                            <div class="fact-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <div><small>Certifications</small><a href="https://www.credly.com/users/uditha-jaya-sri" target="_blank" rel="noopener"><span>View on Credly</span></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card b-what reveal">
+                    <div class="w-icon"><i class="fa-solid fa-server"></i></div>
+                    <h4>Infrastructure</h4>
+                    <p>Server management, system and network troubleshooting, hardware and software support.</p>
+                </div>
+                <div class="card b-what reveal">
+                    <div class="w-icon"><i class="fa-solid fa-cloud"></i></div>
+                    <h4>Cloud &amp; Admin</h4>
+                    <p>AWS resources and Office 365 — user access, email and security settings.</p>
+                </div>
+                <div class="card b-what reveal">
+                    <div class="w-icon"><i class="fa-solid fa-code"></i></div>
+                    <h4>Development</h4>
+                    <p>ASP.NET MVC, Flutter, Electron and PHP — from database to polished UI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">What I work with</span>
+                <h2 class="section-title">Skills &amp; <span class="grad-text">Tech Stack</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="card skill-group reveal">
+                    <div class="skill-group-head">
+                        <div class="skill-icon"><i class="fa-solid fa-globe"></i></div>
+                        <div><h4>Web &amp; Backend</h4><p>Business systems and APIs</p></div>
+                    </div>
+                    <div class="chips">
+                        <span class="chip">ASP.NET MVC</span><span class="chip">.NET Framework</span><span class="chip">C#</span>
+                        <span class="chip">Web API</span><span class="chip">SQL Server</span><span class="chip">PHP</span>
+                        <span class="chip">JavaScript</span><span class="chip">Node.js</span>
+                    </div>
+                </div>
+                <div class="card skill-group reveal">
+                    <div class="skill-group-head">
+                        <div class="skill-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div><h4>Mobile &amp; Desktop</h4><p>Cross-platform applications</p></div>
+                    </div>
+                    <div class="chips">
+                        <span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Android</span>
+                        <span class="chip">Electron</span><span class="chip">Firebase</span><span class="chip">Browser Extensions</span>
+                    </div>
+                </div>
+                <div class="card skill-group reveal">
+                    <div class="skill-group-head">
+                        <div class="skill-icon"><i class="fa-brands fa-aws"></i></div>
+                        <div><h4>Cloud &amp; Administration</h4><p>Services and security</p></div>
+                    </div>
+                    <div class="chips">
+                        <span class="chip">AWS Cloud Services</span><span class="chip">Office 365 Admin</span>
+                        <span class="chip">User &amp; Access Management</span><span class="chip">Email &amp; Security</span>
+                    </div>
+                </div>
+                <div class="card skill-group reveal">
+                    <div class="skill-group-head">
+                        <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <div><h4>Infrastructure &amp; Support</h4><p>Keeping systems healthy</p></div>
+                    </div>
+                    <div class="chips">
+                        <span class="chip">Server Management</span><span class="chip">System &amp; Network Troubleshooting</span>
+                        <span class="chip">Hardware &amp; Software Support</span><span class="chip">End-user Support</span>
+                        <span class="chip">Networking Fundamentals</span><span class="chip">Cybersecurity Basics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">Selected work</span>
+                <h2 class="section-title">Featured <span class="grad-text">Projects</span></h2>
+                <p class="section-sub">Products and tools I've designed and built end to end.</p>
+            </div>
+
+            <!-- Featured: UJS Downloader -->
+            <div class="card featured reveal">
+                <div class="featured-grid">
+                    <div class="featured-body">
+                        <span class="badge"><i class="fa-solid fa-star"></i> Flagship project</span>
+                        <h3>UJS Downloader</h3>
+                        <p>Paste a YouTube, Facebook or TikTok link and download the video. One product available
+                            as a Windows desktop app, an Android app, and a browser extension — with a companion
+                            marketing website.</p>
+                        <div class="platforms">
+                            <span class="chip"><i class="fa-brands fa-windows"></i> Windows (Electron)</span>
+                            <span class="chip"><i class="fa-brands fa-android"></i> Android</span>
+                            <span class="chip"><i class="fa-brands fa-chrome"></i> Browser extension</span>
+                            <span class="chip"><i class="fa-brands fa-php"></i> PHP website</span>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Up to 4K video, or MP3 audio</li>
+                            <li><i class="fa-solid fa-check"></i> Playlists and whole channels</li>
+                            <li><i class="fa-solid fa-check"></i> Trim a clip before saving</li>
+                            <li><i class="fa-solid fa-check"></i> Download button right on YouTube</li>
+                            <li><i class="fa-solid fa-check"></i> Queue, batch and clipboard pop-up</li>
+                            <li><i class="fa-solid fa-check"></i> Speed and Wi-Fi control, history</li>
+                        </ul>
+                    </div>
+                    <div class="featured-visual">
+                        <div class="app-window">
+                            <div class="app-bar"><i></i><i></i><i></i><span>UJS Downloader</span></div>
+                            <div class="app-body">
+                                <div class="app-input"><i class="fa-solid fa-link"></i> Paste a video link… <span class="go">Download</span></div>
+                                <div class="dl-item">
+                                    <div class="dl-row"><b>Video · 4K</b><span>MP4</span></div>
+                                    <div class="dl-bar"><span></span></div>
+                                </div>
+                                <div class="dl-item">
+                                    <div class="dl-row"><b>Playlist</b><span>Queue</span></div>
+                                    <div class="dl-bar"><span></span></div>
+                                </div>
+                                <div class="dl-item">
+                                    <div class="dl-row"><b>Audio</b><span>MP3</span></div>
+                                    <div class="dl-bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="subhead reveal">Mobile &amp; Web Applications</h3>
+            <div class="projects-grid">
+                <!-- Complaint management app -->
+                <div class="card project-card reveal" tabindex="0" data-img="Images/complaint-app.svg" data-title="Complaint Management Mobile App">
+                    <div class="project-img-wrapper">
+                        <img src="Images/complaint-app.svg" alt="Complaint Management Mobile App" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>Complaint Management Mobile App</h4>
+                        <p>A Flutter mobile app backed by a .NET API and admin portal for submitting and tracking complaints and cases, uploading documents, receiving notifications, and reaching support — with multi-language support and an emergency SOS feature.</p>
+                        <div class="chips">
+                        <span class="chip">Flutter</span><span class="chip">.NET API</span><span class="chip">Admin Portal</span><span class="chip">Multi-language</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="card project-card reveal" tabindex="0" data-img="Images/hardware-inventory.svg" data-title="Hardware Inventory System">
+                    <div class="project-img-wrapper">
+                        <img src="Images/hardware-inventory.svg" alt="Hardware Inventory System" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>Hardware Inventory System</h4>
+                        <p>Track computers, printers and network devices with their specifications, locations and status in one searchable inventory.</p>
+                        <div class="chips"><span class="chip">ASP.NET MVC</span><span class="chip">SQL Server</span></div>
+                    </div>
+                </div>
+                <div class="card project-card reveal" tabindex="0" data-img="Images/spec-management.svg" data-title="ASP.NET MVC Specification Management">
+                    <div class="project-img-wrapper">
+                        <img src="Images/spec-management.svg" alt="ASP.NET MVC Specification Management" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>Specification Management</h4>
+                        <p>Create, edit and organize technical specifications in one place, as structured records that are easy to search and reuse.</p>
+                        <div class="chips"><span class="chip">ASP.NET MVC</span><span class="chip">SQL Server</span></div>
+                    </div>
+                </div>
+                <div class="card project-card reveal" tabindex="0" data-img="Images/meal-attendance.svg" data-title="Meal Attendance Tracking System">
+                    <div class="project-img-wrapper">
+                        <img src="Images/meal-attendance.svg" alt="Meal Attendance Tracking System" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>Meal Attendance Tracking System</h4>
+                        <p>Record daily staff meal attendance and generate printable daily attendance reports.</p>
+                        <div class="chips"><span class="chip">Web App</span><span class="chip">Attendance</span></div>
+                    </div>
+                </div>
+                <div class="card project-card reveal" tabindex="0" data-img="Images/firebase-notification.svg" data-title="Firebase Notification App">
+                    <div class="project-img-wrapper">
+                        <img src="Images/firebase-notification.svg" alt="Firebase Notification App" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>Firebase Notification App</h4>
+                        <p>Send push notifications to mobile devices through Firebase Cloud Messaging and manage what gets delivered.</p>
+                        <div class="chips"><span class="chip">Firebase</span><span class="chip">Push Notifications</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="subhead reveal">Business Systems</h3>
+            <div class="projects-grid">
+                <div class="card project-card reveal" tabindex="0" data-img="Images/customer-feedback.svg" data-title="Customer Feedback System">
+                    <div class="project-img-wrapper">
+                        <img src="Images/customer-feedback.svg" alt="Customer Feedback System" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>Customer Feedback System</h4>
+                        <p>Collect, organize and review customer feedback in one place so teams can spot issues and act on them quickly.</p>
+                        <div class="chips"><span class="chip">Web App</span><span class="chip">Feedback</span></div>
+                    </div>
+                </div>
+                <div class="card project-card reveal" tabindex="0" data-img="Images/it-ticketing.svg" data-title="IT Fault Ticketing System">
+                    <div class="project-img-wrapper">
+                        <img src="Images/it-ticketing.svg" alt="IT Fault Ticketing System" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>IT Fault Ticketing System</h4>
+                        <p>Log, assign and track IT faults from report to resolution, so every issue has an owner, a priority and a clear status.</p>
+                        <div class="chips"><span class="chip">Web App</span><span class="chip">Helpdesk</span><span class="chip">Ticketing</span></div>
+                    </div>
+                </div>
+                <div class="card project-card reveal" tabindex="0" data-img="Images/file-management.svg" data-title="File Management System">
+                    <div class="project-img-wrapper">
+                        <img src="Images/file-management.svg" alt="File Management System" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>File Management System</h4>
+                        <p>Store, organize and retrieve files in a structured, searchable system instead of scattered folders.</p>
+                        <div class="chips"><span class="chip">Web App</span><span class="chip">Documents</span></div>
+                    </div>
+                </div>
+                <div class="card project-card reveal" tabindex="0" data-img="Images/room-reservation.svg" data-title="Room Reservation System">
+                    <div class="project-img-wrapper">
+                        <img src="Images/room-reservation.svg" alt="Room Reservation System" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>Room Reservation System</h4>
+                        <p>Book rooms and spaces, check availability at a glance, and avoid double bookings.</p>
+                        <div class="chips"><span class="chip">Web App</span><span class="chip">Scheduling</span></div>
+                    </div>
+                </div>
+                <div class="card project-card reveal" tabindex="0" data-img="Images/meeting-management.svg" data-title="Meeting Management System">
+                    <div class="project-img-wrapper">
+                        <img src="Images/meeting-management.svg" alt="Meeting Management System" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>Meeting Management System</h4>
+                        <p>Schedule meetings, manage attendees and agendas, and keep meeting records organized.</p>
+                        <div class="chips"><span class="chip">Web App</span><span class="chip">Scheduling</span></div>
+                    </div>
+                </div>
+                <div class="card project-card reveal" tabindex="0" data-img="Images/network-monitoring.svg" data-title="Real-Time Network Monitoring Dashboard">
+                    <div class="project-img-wrapper">
+                        <img src="Images/network-monitoring.svg" alt="Real-Time Network Monitoring Dashboard" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>Real-Time Network Monitoring Dashboard</h4>
+                        <p>A live dashboard that tracks network status in real time so problems are spotted and fixed early.</p>
+                        <div class="chips"><span class="chip">Dashboard</span><span class="chip">Real-time</span><span class="chip">Networking</span></div>
+                    </div>
+                </div>
+                <div class="card project-card reveal" tabindex="0" data-img="Images/vpn-monitoring.svg" data-title="VPN Monitoring Dashboard">
+                    <div class="project-img-wrapper">
+                        <img src="Images/vpn-monitoring.svg" alt="VPN Monitoring Dashboard" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>VPN Monitoring Dashboard</h4>
+                        <p>Monitor VPN tunnels, connected users and traffic in one live view, with alerts when a connection drops or becomes unstable.</p>
+                        <div class="chips"><span class="chip">Dashboard</span><span class="chip">Real-time</span><span class="chip">VPN</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="subhead reveal">Tools &amp; Utilities</h3>
+            <div class="projects-grid">
+                <div class="card project-card reveal" tabindex="0" data-img="Images/bulk-image-resize.svg" data-title="Bulk Image Resize Tool">
+                    <div class="project-img-wrapper">
+                        <img src="Images/bulk-image-resize.svg" alt="Bulk Image Resize Tool" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>Bulk Image Resize Tool</h4>
+                        <p>Resize large batches of images in one go, saving hours of repetitive manual editing.</p>
+                        <div class="chips"><span class="chip">Utility</span><span class="chip">Batch Processing</span></div>
+                    </div>
+                </div>
+                <div class="card project-card reveal" tabindex="0" data-img="Images/label-generator.svg" data-title="Label Generator Tool">
+                    <div class="project-img-wrapper">
+                        <img src="Images/label-generator.svg" alt="Label Generator Tool" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>Label Generator Tool</h4>
+                        <p>Generate and print consistent, ready-to-use labels with barcodes or QR codes, in bulk.</p>
+                        <div class="chips"><span class="chip">Utility</span><span class="chip">Label Printing</span></div>
+                    </div>
+                </div>
+                <div class="card project-card reveal" tabindex="0" data-img="Images/ost-reader.svg" data-title="OST File Reader Tool">
+                    <div class="project-img-wrapper">
+                        <img src="Images/ost-reader.svg" alt="OST File Reader Tool" loading="lazy">
+                        <span class="expand-icon"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="project-info">
+                        <h4>OST File Reader Tool</h4>
+                        <p>Open Outlook OST files, browse mailbox folders and messages, and export the items you need.</p>
+                        <div class="chips"><span class="chip">Desktop Tool</span><span class="chip">Email Files</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-inner">
+            <button class="lightbox-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <button class="lightbox-nav prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+            <img src="" alt="">
+            <div class="lightbox-caption"></div>
+            <button class="lightbox-nav next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">My journey</span>
+                <h2 class="section-title">Work <span class="grad-text">Experience</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card">
+                        <h5>IT Technical Officer</h5>
+                        <p>Responsible for infrastructure support, server management, troubleshooting, and end-user support.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card">
+                        <h5>Full-Stack &amp; Mobile Development</h5>
+                        <p>Designing and building ASP.NET MVC web applications, Flutter mobile apps with .NET APIs, and cross-platform desktop tools.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card">
+                        <h5>System &amp; Database Support</h5>
+                        <p>Worked on ASP.NET MVC applications and SQL Server databases, and provided continuous system support.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card">
+                        <h5>Cloud &amp; Office 365 Admin</h5>
+                        <p>Managed AWS cloud resources and Office 365 services, including user access, email, and security settings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">Always learning</span>
+                <h2 class="section-title">Certifications &amp; <span class="grad-text">Badges</span></h2>
+                <p class="section-sub">Verified digital credentials issued by Cisco through Credly.</p>
+            </div>
+            <div class="cert-grid">
+                <a class="card cert-card reveal" href="https://www.credly.com/users/uditha-jaya-sri" target="_blank" rel="noopener">
+                    <img src="https://images.credly.com/images/e2d12302-10f9-40d4-8ff1-066a7008b61d/blob" alt="Introduction to Modern AI badge" loading="lazy">
+                    <h4>Introduction to Modern AI</h4>
+                    <span class="cert-issuer">Cisco</span>
+                    <span class="chip"><i class="fa-regular fa-calendar"></i> Aug 2026</span>
+                </a>
+                <a class="card cert-card reveal" href="https://www.credly.com/users/uditha-jaya-sri" target="_blank" rel="noopener">
+                    <img src="https://images.credly.com/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png" alt="Introduction to Cybersecurity badge" loading="lazy">
+                    <h4>Introduction to Cybersecurity</h4>
+                    <span class="cert-issuer">Cisco</span>
+                    <span class="chip"><i class="fa-regular fa-calendar"></i> Aug 2026</span>
+                </a>
+                <a class="card cert-card reveal" href="https://www.credly.com/users/uditha-jaya-sri" target="_blank" rel="noopener">
+                    <img src="https://images.credly.com/images/5bdd6a39-3e03-4444-9510-ecff80c9ce79/image.png" alt="Networking Basics badge" loading="lazy">
+                    <h4>Networking Basics</h4>
+                    <span class="cert-issuer">Cisco</span>
+                    <span class="chip"><i class="fa-regular fa-calendar"></i> Aug 2026</span>
+                </a>
+            </div>
+            <div class="cert-more reveal">
+                <a href="https://www.credly.com/users/uditha-jaya-sri" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-solid fa-certificate"></i> View all on Credly</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-box reveal">
+                <span class="section-tag">Let's connect</span>
+                <h3>Have a project in mind? <span class="grad-text">Let's talk.</span></h3>
+                <p>I'm available for new software development projects — web systems, mobile apps or custom tools. Reach out and I'll get back to you.</p>
+                <div class="contact-main">
+                    <a href="mailto:ujs.live@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> ujs.live@gmail.com</a>
+                </div>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/uditha" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://github.com/UdithaJayaSri" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.facebook.com/share/16TQiRdvRa/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="https://www.credly.com/users/uditha-jaya-sri" target="_blank" rel="noopener"><i class="fa-solid fa-certificate"></i> Credly</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; <span id="year"></span> <span>Uditha Jaya Sri</span> | All Rights Reserved
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
